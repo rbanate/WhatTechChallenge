@@ -1,0 +1,41 @@
+﻿@model List<WhateTechChallenge.Models.CustomerBet>
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Customer Id</th>
+                <th>Event</th>
+                <th>Participant</th>
+                <th>Stake</th>
+                <th>Win</th>
+                <th>Unusual Bet</th>
+                <th>Highly Unusual Bet</th>
+                <th>Risky Bet</th>
+                @*<th>From Settled File</th>*@
+                @*<th>Average Bet</th>*@
+            </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (var bet in Model)
+                    {
+                        <tr>
+                            <td>@bet.CustomerId</td>
+                            <td>@bet.Event</td>
+                            <td>@bet.Participant</td>
+                            <td>@bet.Stake</td>
+                            <td>@bet.Win</td>
+                            <td>@bet.IsUnusualBet</td>
+                            <td>@bet.HighlyUnsualBet</td>
+                            <td>@bet.IsRisky</td>
+                            @*<td>@bet.IsSettledBet</td>*@
+                            @*<td>@bet.AverageBet</td>*@
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
