@@ -1,7 +1,7 @@
 # WhatTechChallenge
 WhatTechChallenge
 
-##Instructions
+## Instructions
 
 1) Application is in asp.net MVC - simply run it in Visual Studio
 2) Main application is WhatTechCallenge
